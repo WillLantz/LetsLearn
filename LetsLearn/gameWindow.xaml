@@ -1,0 +1,43 @@
+﻿<Window x:Class="LetsLearn.gameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LetsLearn"
+        mc:Ignorable="d"
+        Title="gameWindow" Height="516.027" Width="817.269">
+    <Grid x:Name="Lets_Play_" Margin="-14,0,-5.8,-85.6">
+        <Grid.Background>
+            <ImageBrush ImageSource="astronaut.jpg"/>
+        </Grid.Background>
+        <Label x:Name="gameAstLbl" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="#FFEE0000" FontSize="22"/>
+        <Rectangle x:Name="startGameBG" HorizontalAlignment="Left" Height="62" Margin="152,40,0,0" Stroke="Black" VerticalAlignment="Top" Width="504">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#FF131317" Opacity="0.75"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label x:Name="startGameLbl" Content="Press Start to begin the game" HorizontalAlignment="Left" Margin="170,40,0,0" VerticalAlignment="Top" Height="62" Width="486" Foreground="Red" FontSize="36"/>
+        <Button x:Name="strtGameBtn" Content="START" HorizontalAlignment="Left" Margin="295,117,0,0" VerticalAlignment="Top" Width="217" Height="80" FontSize="20" FontWeight="Bold" Click="strtGameBtn_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="strt.jpg"/>
+            </Button.Background>
+        </Button>
+        <Rectangle x:Name="gameQBG" HorizontalAlignment="Left" Height="208" Margin="153,244,0,0" VerticalAlignment="Top" Width="411">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="Black" Opacity="0.7"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label x:Name="gameQLbl" Content="" HorizontalAlignment="Left" Margin="195,269,0,0" VerticalAlignment="Top" Foreground="Red" FontWeight="Bold" FontSize="48" Width="188"/>
+        <TextBox x:Name="gameQAnsBox" HorizontalAlignment="Left" Height="57" Margin="383,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Background="#FFF90000" Foreground="Black" FontWeight="Bold" FontSize="36" PreviewKeyDown="txtInput_PreviewKeyDown"/>
+        <Button x:Name="gameQSubmitBtn" Content="Submit" HorizontalAlignment="Left" Margin="296,374,0,0" VerticalAlignment="Top" Width="149" Height="57" BorderBrush="DarkRed" Background="#FF60FA00" Foreground="#FFFCFCFC" FontWeight="Bold" FontSize="22" Click="gameQSubmitBtn_Click"/>
+        <Label x:Name="ansErrorLbl" Content="" HorizontalAlignment="Left" Margin="195,244,0,0" VerticalAlignment="Top" Width="318" Foreground="Red" FontWeight="Bold" FontSize="18"/>
+        <Label x:Name="ansLbl" Content="" HorizontalAlignment="Left" Margin="569,318,0,0" VerticalAlignment="Top" Height="70" Width="234" Foreground="#FFD0FF00" FontWeight="Bold" FontSize="36"/>
+        <Rectangle x:Name="alertBG" HorizontalAlignment="Left" Height="100" Margin="153,139,0,0" VerticalAlignment="Top" Width="411">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="alert.jpg" Opacity="0.75"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label x:Name="alertLbl" Content="00:00:00" HorizontalAlignment="Left" Margin="255,153,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="48" Width="219"/>
+
+    </Grid>
+</Window>
